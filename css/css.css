@@ -95,6 +95,7 @@ body{
     border-radius: 50%;
     height: 190px;
     border: rgb(182, 177, 187) double 5px;
+    margin-bottom: 16px;
 }
 .sidebar{
     padding: 16px;
@@ -105,4 +106,32 @@ body{
     height: 650px;
     margin-bottom: 60px;
     border-right: 1px #646262 solid;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-footer{
+    width: auto;
+    height: auto;
+    background-color: #181d25;
+    margin-top: 50px;
+    padding: 16px;
+}
+.sidebar label p{
+    padding: 10px;
+    margin-right: 50%;
+    text-align: center;
+    font-size: 1.5em;
+    font-family: serif;
+    font-weight: bold;
+
+}
+.about-me p{
+    font-size: 16px;
+}
+.about-me h5{
+    text-decoration: underline double 1px;
+    border-width: 1px;
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
 }
