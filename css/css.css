@@ -91,9 +91,9 @@ body{
    
 }
 .image-dv{
-    width: 50%;
+    width: 65%;
     border-radius: 50%;
-    height: 190px;
+    height: 40%;
     border: rgb(182, 177, 187) double 5px;
     margin-bottom: 16px;
 }
@@ -134,4 +134,35 @@ body{
     margin: 10px;
     padding: 10px;
     font-size: 10px;
+}
+
+@media(max-width:600px){
+
+.sidebar img{
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    object-fit: cover;
+    
+   
+}
+.image-dv{
+    width: 30%;
+    border-radius: 20%;
+    height: 30%;
+    border: rgb(182, 177, 187) double 5px;
+    margin-bottom: 16px;
+}
+.sidebar{
+  
+    width: 20%;
+    background-color: #1e232c;
+    margin-top: -629px;
+    position: absolute;
+    height: 20%;
+    margin-bottom: 60px;
+    border-right: 1px #646262 solid;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 }
