@@ -336,7 +336,15 @@ body{
         padding: 5px;
         font-size: 10px;
     }
-
+    .noticeboard #clock{
+        font-size: 9px;
+        text-align: right;
+        width: 62%;
+        background-color: rgb(46, 84, 99);
+        border-radius: 15px;
+        margin-left: 81px;
+        padding: 5px;
+    }
     .noticeboard{
         border: 1px #646262 solid;
         padding: 10px;
