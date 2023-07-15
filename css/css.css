@@ -111,7 +111,7 @@ body{
 
 .main-footer{
     width: auto;
-    height: auto;
+    height: 73px;
     background-color: #181d25;
     margin-top: 50px;
     padding: 16px;
@@ -195,7 +195,7 @@ body{
     
     .main-footer{
         width: auto;
-        height: auto;
+        height: 45px;
         background-color: #181d25;
         margin-top: 96px;
         padding: 16px;
@@ -310,7 +310,7 @@ body{
     
     .main-footer{
         width: auto;
-        height: auto;
+        height: 45px;
         background-color: #181d25;
         margin-top: 96px;
         padding: 16px;

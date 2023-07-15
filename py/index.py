@@ -2,6 +2,7 @@ from datetime import datetime
 
 
 notice_date = Element("clock")
+copy_right = Element("cr")
 
 current = datetime.now()
 
@@ -17,3 +18,4 @@ else:
     date += f"WEEKDAY \n{d[week_day]} {day} / {month} / {year}"
 
 notice_date.write(date)
+copy_right.write(year)
