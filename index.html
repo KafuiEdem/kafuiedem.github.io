@@ -3,69 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
-    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
-    <link rel="stylesheet" href="/css/css.css" type="text/css">
+    <link rel="stylesheet" href="/css/css.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/3.0.5/marked.min.js"></script>
+
+    <title>Your Portfolio</title>
 </head>
 <body>
-    <header class="main-header">
-        <div class="container-header">
-            <p>KafuiEdem</p>
-        </div>
-    </header>
-    <nav class="main-navbar">
-        <div class="container-header">
-            <ul>
-                <li><a href="index.html">wall</a></li>
-                <li><a href="/html/project.html">project</a></li>
-                <li><a href="/html/cv.html">cv</a></li>
-            </ul>
-        </div>
+    <nav>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
     </nav>
-    <div class="container">
-        <section class="noticeboard">
-            <p id="clock"> </p>
 
-        </section>
-    </div>
-    <div class="container">
-        <section class="main-page">
-           <article class="art">
-                <h6>Project 1</h6>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, exercitationem?</p>
+    <header>
+        <h1>Edem Robin</h1>
+        <p>DevOps</p>
+    </header>
 
-           </article>
-           <article class="art">
-            <h6>Project 1</h6>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, exercitationem?</p>
-            <div class="clr"></div>
-       </article>
-
-        </section>
-    </div>
-    <div class="clr"></div>
-    <aside class="sidebar">
-        <div class="image-dv">
-            <img src="/img/sano.jpg" alt="profile pic">
+    <div class="sidebar" id="about">
+        <div class="profile-picture" id="profile-picture">
+            <!-- <img src="github.svg" alt="Profile Picture"> -->
         </div>
-        <label for=""><p>KafuiEdem</p></label>
-        <div class="about-me">
-            <h5>About me</h5>
-            <p> Hi, I’m KafuiEdem
-                I’m interested in Python, DevOps, Machine Learning.
-                I’m currently learning Python
-                I’m looking to collaborate on Python, Machine Learning.</p>
-        </div>
-    </aside>
-    <div class="clr"></div>
-    <py-script src="/py/index.py"></py-script>
-    <footer class="main-footer">
-        <p class="copy"><p id="co-date">&copy; <span id="cr"></span> KafuiEdem</p> 
-        </p>
-        
-    </footer>
-   
+        <div id="about-content"></div>
+       
+    </div>
     
+
+    <div class="container" id="projects">
+        <!-- Mock Project 1 -->
+        <div class="project-container">
+            <div class="project">
+                <img src="/img/github.jpeg"  alt="Project 1 Showcase" class="project-showcase">
+                <h2>Project 1</h2>
+                <p>This is a description of Project 1. Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
+            </div>
+        </div>
+
+        <!-- Mock Project 2 -->
+        <div class="project-container">
+            <div class="project">
+                <img src="/img/github.jpeg"  alt="Project 2 Showcase" class="project-showcase">
+                <h2>Project 2</h2>
+                <p>This is a description of Project 2. Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
+            </div>
+        </div>
+
+        <!-- Mock Project 3 -->
+        <div class="project-container">
+            <div class="project">
+                <img src="/img/github.jpeg"  alt="Project 3 Showcase" class="project-showcase">
+                <h2>Project 3</h2>
+                <p>This is a description of Project 3. Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
+            </div>
+        </div>
+
+        <!-- Mock Project 4 -->
+        <div class="project-container">
+            <div class="project">
+                <img src="/img/github.jpeg" alt="Project 4 Showcase" class="project-showcase">
+                <h2>Project 4</h2>
+                <p>This is a description of Project 4. Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
+            </div>
+        </div>
+
+        <!-- Mock Project 5 -->
+        <div class="project-container">
+            <div class="project">
+                <img src="/img/github.jpeg"  alt="Project 5 Showcase" class="project-showcase">
+                <h2>Project 5</h2>
+                <p>This is a description of Project 5. Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
+            </div>
+        </div>
+
+        <!-- Mock Project 6 -->
+        <div class="project-container">
+            <div class="project">
+                <img src="/img/github.jpeg" alt="Project 6 Showcase" class="project-showcase">
+                <h2>Project 6</h2>
+                <p>This is a description of Project 6. Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Numeric Pagination -->
+    <div class="container" id="pagination">
+        <!-- JavaScript will dynamically generate page numbers here -->
+    </div>
+
+    <div class="container" id="contact">
+        <h2>Contact</h2>
+        <p>You can reach me at your.email@example.com</p>
+    </div>
+    
+    <footer>
+        <script>
+            const currentYear = new Date().getFullYear();
+            document.write(`&copy; ${currentYear} Edem Robin`);
+        </script>
+    </footer>
+
+    <script src="/js/style.js"></script>
+    <script type="module" src="/js/about.js"></script>
+  
+
+
 </body>
 </html>

@@ -1,374 +1,181 @@
-*{
-    padding: 0;
+/* Reset default margin and padding values */
+* {
     margin: 0;
-}
-body{
-    background-color: #1e232c;
-    color: #c7c6c6;
-    position: relative;
-}
-
-.container{
-    width: 50%;
-    margin: auto;
-}
-.container-header{
-    width: auto;
-    height: auto;
-    position: relative;
-    background-color: #181d25;
-}
-.main-header .container-header p{
-    position: absolute;
-    margin: 10px;
-}
-
-.main-header{
-    background-color: #181d25;
-    text-align: left;
-    font-style:normal;
-    height: 70px;
-    font-weight: bold;
-    
-}
-
-.main-navbar{
-    background-color: #181d25;
-    border-bottom: 1px #646262 solid;
-    padding-bottom: 5px;
-}
-.main-navbar ul{
     padding: 0;
-    list-style: none;
-}
-.main-navbar li{
-    display: inline;
-    padding: 10px;
-}
-.main-navbar a{
-    color: #c7c6c6;
-    font-size: 18px;
-    padding-right: 10px;
-    text-decoration: none;
-}
-.main-navbar a:active{
-    font-weight: bold;
-    border-bottom: 5px #f37f7f solid;
-}
-.noticeboard{
-    border: 1px #646262 solid;
-    padding: 16px;
-    margin-top: 50px;
-    border-radius: 6px;
-    height: 180px;
-}
-.main-page{
-    border: 1px #646262 solid;
-    padding: 16px;
-    margin-top: 80px;
-    border-radius: 6px;
-    height: 300px;
-}
-.clr{
-    clear: both;
-}
-.art{
-    border: 1px #646262 solid;
-    padding: 16px;
-    margin: 10px;
-    width: 50%;
-    float: left;
     box-sizing: border-box;
-    
 }
 
-.sidebar img{
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    object-fit: cover;
-    
-   
-}
-.image-dv{
-    width: 65%;
-    border-radius: 50%;
-    height: 40%;
-    border: rgb(182, 177, 187) double 5px;
-    margin-bottom: 16px;
-}
-.sidebar{
-    padding: 16px;
-    width: 20%;
-    background-color: #1e232c;
-    margin-top: -629px;
-    position: absolute;
-    height: 650px;
-    margin-bottom: 60px;
-    border-right: 1px #646262 solid;
-    font-family: Arial, Helvetica, sans-serif;
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
 }
 
-.main-footer{
-    width: auto;
-    height: 73px;
-    background-color: #181d25;
-    margin-top: 50px;
-    padding: 16px;
-}
-.sidebar label p{
-    padding: 10px;
-    margin-right: 50%;
+nav {
+    background-color: #333;
+    color: #fff;
     text-align: center;
-    font-size: 1.5em;
-    font-family: serif;
-    font-weight: bold;
-
+    padding: 10px 0;
 }
-.about-me p{
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 20px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    z-index: 2; /* Ensure the header is on top */
+}
+
+header h1 {
+    font-size: 36px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.project h2 {
+    font-size: 24px;
+}
+
+.project p {
     font-size: 16px;
 }
-.about-me h5{
-    text-decoration: underline double 1px;
-    border-width: 1px;
-    margin: 10px;
-    padding: 10px;
-    font-size: 10px;
+
+/* Additional CSS for improved styling */
+.project:hover {
+    background-color: #f5f5f5;
 }
 
-@media only screen and (max-width:990px){
- 
-    .container{
-        width: 67%;
-        margin-left: 29% ;
-    }
-    .container-header{
-        width: auto;
-        height: auto;
-        position: relative;
-        background-color: #181d25;
-    }
-    .main-header .container-header p{
-        position: absolute;
-        margin: 5px;
-    }
+/* JavaScript to toggle project descriptions */
+.project p {
+    display: none;
+}
 
-    .main-header{
-        background-color: #181d25;
-        text-align: left;
-        font-style:normal;
-        height: 70px;
-        font-weight: bold;
-        
+.project.active {
+    display: block !important;
+}
 
-    }
+/* CSS for the footer */
+footer {
+    clear: both; /* Ensure the footer is cleared below other content */
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+}
 
-    .sidebar img{
-        width: 100%;
-        height: 100%;
-        border-radius: 50%;
-        object-fit: cover;
-        
-       
-    }
-    .image-dv{
-        width: 70%;
-        border-radius: 50%;
-        height: 9%;
-        border: rgb(182, 177, 187) double 5px;
-        margin-bottom: 16px;
-    }
-    .sidebar{
-        padding: 16px;
-        width: 20%;
-        background-color: #1e232c;
-        margin-top: -360px;
-        position: absolute;
-        height: 500px;
-        margin-bottom: 60px;
-        border-right: 1px #646262 solid;
-        font-family: Arial, Helvetica, sans-serif;
-        z-index: -1;
-        overflow: hidden;
-        
-    }
-    
-    .main-footer{
-        width: auto;
-        height: 45px;
-        background-color: #181d25;
-        margin-top: 96px;
-        padding: 16px;
-      
-    }
-    .sidebar label p{
-        padding-bottom: 10px;
-        margin-right: 60%;
-        text-align: center;
-        font-size: 0.5em;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        font-weight: bold;
-      float: left;
-    
-    }
-    .about-me p{
-        font-size: 8px;
-    }
-    .about-me h5{
-        text-decoration: underline double 1px;
-        border-width: 1px;
-        margin: 5px;
-        padding: 5px;
-        font-size: 10px;
-    }
+/* CSS for the numeric pagination */
+#pagination {
+    text-align: center;
+    margin-top: 20px;
+}
 
-    .noticeboard{
-        border: 1px #646262 solid;
-        padding: 10px;
-        margin-top: 10px;
-        border-radius: 6px;
-        height: 90px;
-    }
-    .art{
-        border: 1px #646262 solid;
-        padding: 5px;
-        margin: 5px;
-        width: 30%;
-        float: left;
-        box-sizing: border-box;
-        
-    }
-    .art p{
-        font-size: 0.5em;
-    }
-    .main-page{
-        border: 1px #646262 solid;
-        padding: 10px;
-        margin-top: 20px;
-        border-radius: 6px;
-        height: 200px;
-    }
+.page-number {
+    display: inline-block;
+    margin: 0 5px;
+    cursor: pointer;
+    padding: 5px 10px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.page-number:hover {
+    background-color: #555;
+}
+
+/* CSS for the projects grid */
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* To evenly space projects in a row */
+}
+
+/* CSS for the project containers */
+.project-container {
+    background-color: #fff;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.project {
+    padding: 20px;
+}
+
+.project-showcase {
+    max-width: 200px; /* Adjust the maximum width to your desired size */
+    max-height: 200px; /* Add a maximum height to the image */
+    width: auto; /* Automatically adjust the width to maintain the aspect ratio */
+    display: block; /* Ensure the image is a block-level element */
+    margin-bottom: 10px;
+}
+
+/* CSS for the "About Me" section */
+.sidebar {
+    background-color: #fff;
+    padding: 10px; /* Reduced padding */
+    width: 20%; /* Smaller width */
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.sidebar p {
+    font-size: 14px; /* Adjust font size as needed */
+}
+
+/* Clear floating elements after the sidebar */
+.container:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* CSS for the contact section */
+#contact {
+    margin-top: 20px; /* Add margin to create space between the "About Me" sidebar and "Contact Me" section */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* CSS for the profile picture */
+.profile-picture {
+    text-align: center; /* Center the image */
+    margin-bottom: 20px; /* Add space below the image */
+}
+
+.profile-picture img {
+    width: 150px; /* Set the width of the image */
+    height: 150px; /* Set the height of the image */
+    border-radius: 50%; /* Create a rounded shape for the image */
+    border: 2px solid #333; /* Add a border around the image (customize as needed) */
 }
 
 
-@media only screen and (max-width:800px){
- 
-    .container{
-        width: 67%;
-        margin-left: 29% ;
-    }
-    .container-header{
-        width: auto;
-        height: auto;
-        position: relative;
-        background-color: #181d25;
-    }
-    .main-header .container-header p{
-        position: absolute;
-        margin: 5px;
-    }
-
-    .main-header{
-        background-color: #181d25;
-        text-align: left;
-        font-style:normal;
-        height: 70px;
-        font-weight: bold;
-        
-
-    }
-
-    .sidebar img{
-        width: 100%;
-        height: 100%;
-        border-radius: 50%;
-        object-fit: cover;
-        
-       
-    }
-    .image-dv{
-        width: 70%;
-        border-radius: 50%;
-        height: 9%;
-        border: rgb(182, 177, 187) double 5px;
-        margin-bottom: 16px;
-    }
-    .sidebar{
-        padding: 16px;
-        width: 20%;
-        background-color: #1e232c;
-        margin-top: -360px;
-        position: absolute;
-        height: 500px;
-        margin-bottom: 60px;
-        border-right: 1px #646262 solid;
-        font-family: Arial, Helvetica, sans-serif;
-        z-index: -1;
-        overflow: hidden;
-        
-    }
-    
-    .main-footer{
-        width: auto;
-        height: 45px;
-        background-color: #181d25;
-        margin-top: 96px;
-        padding: 16px;
-      
-    }
-    .sidebar label p{
-        padding-bottom: 10px;
-        margin-right: 60%;
-        text-align: center;
-        font-size: 0.5em;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        font-weight: bold;
-      float: left;
-    
-    }
-    .about-me p{
-        font-size: 8px;
-    }
-    .about-me h5{
-        text-decoration: underline double 1px;
-        border-width: 1px;
-        margin: 5px;
-        padding: 5px;
-        font-size: 10px;
-    }
-    .noticeboard #clock{
-        font-size: 9px;
-        text-align: right;
-        width: 62%;
-        background-color: rgb(46, 84, 99);
-        border-radius: 15px;
-        margin-left: 81px;
-        padding: 5px;
-    }
-    .noticeboard{
-        border: 1px #646262 solid;
-        padding: 10px;
-        margin-top: 10px;
-        border-radius: 6px;
-        height: 90px;
-    }
-    .art{
-        border: 1px #646262 solid;
-        padding: 5px;
-        margin: 5px;
-        width: 30%;
-        float: left;
-        box-sizing: border-box;
-        
-    }
-    .art p{
-        font-size: 0.5em;
-    }
-    .main-page{
-        border: 1px #646262 solid;
-        padding: 10px;
-        margin-top: 20px;
-        border-radius: 6px;
-        height: 200px;
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%; /* Full width on smaller screens */
+        margin-right: 0; /* Remove right margin on smaller screens */
     }
 }
